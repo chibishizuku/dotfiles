@@ -1,0 +1,51 @@
+[Colors:Button]
+BackgroundNormal=19,14,19
+ForegroundNormal=255,255,255
+
+[Colors:Selection]
+BackgroundNormal=49,32,64
+ForegroundNormal=255,255,255
+
+[Colors:Tooltip]
+BackgroundNormal=19,14,19
+ForegroundNormal=255,255,255
+
+[Colors:View]
+BackgroundNormal=19,14,19
+ForegroundNormal=255,255,255
+
+[Colors:Window]
+BackgroundNormal=19,14,19
+ForegroundNormal=255,255,255
+
+[General]
+TerminalApplication=kitty
+
+[Icons]
+Theme=Tela-circle-dracula
+
+[KDE]
+widgetStyle=kvantum
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=105
+View Style=DetailTree
+
+[UiSettings]
+ColorScheme=colors
+
+[Wallet]
+Enabled=false

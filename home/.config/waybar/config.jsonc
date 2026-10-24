@@ -1,0 +1,137 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "exclusive": true,
+    "passthrough": false,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "custom/caffeine",
+        "clock",
+        "custom/powerprofile"
+    ],
+
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "tray",
+        "battery"
+    ],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+      
+    },
+
+"custom/powerprofile": {
+    "exec": "~/.config/hypr/scripts/powerprofile.sh",
+    "return-type": "json",
+    "restart-interval": 5
+},
+
+"custom/caffeine": {
+    "exec": "~/.config/hypr/scripts/caffeine.sh status",
+    "return-type": "json",
+    "interval": "once",
+    "signal": 8,
+    "on-click": "~/.config/hypr/scripts/caffeine.sh toggle"
+},
+
+"clock": {
+    "format": "{:%a %d %b  %H:%M}",
+    "format-alt": " {:%Y-%m-%d}",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "<span font='11'><b>{:%A, %d %B %Y}</b></span>\n\n<tt><span font='11'>{calendar}</span></tt>",
+    "calendar": {
+        "mode": "month",
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "format": {
+            "months":   "<span color='#f5c2e7'><b>{}</b></span>",
+            "days":     "<span color='#cdd6f4'>{}</span>",
+            "weeks":    "<span color='#94e2d5'><b>W{}</b></span>",
+            "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+            "today":    "<span color='#f38ba8'><b><u>{}</u></b></span>"
+        }
+    },
+    "actions": {
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down",
+        "on-click-right": "mode"
+    }
+},    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 muted",
+        "format-icons": {
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "max-volume": 125,
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " muted",
+        "tooltip": true
+    },
+
+    "tray": {
+        "spacing": 8
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-full": "󰁹 {capacity}%",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "states": {
+            "warning": 30,
+            "critical": 15
+        }
+    }
+}

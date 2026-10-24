@@ -1,0 +1,12 @@
+UNIT FILE               STATE   PRESET
+cliphist.service        enabled enabled
+hypridle.service        enabled enabled
+hyprpolkitagent.service enabled enabled
+udiskie.service         enabled enabled
+waybar.service          enabled enabled
+wireplumber.service     enabled enabled
+p11-kit-server.socket   enabled enabled
+pipewire-pulse.socket   enabled enabled
+pipewire.socket         enabled enabled
+
+9 unit files listed.

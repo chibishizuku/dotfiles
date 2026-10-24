@@ -1,0 +1,9 @@
+program_options:
+  tray: auto
+  automount: false
+
+deivce_config:
+  - match:
+      is_systeminternal: true
+    ignore: true
+

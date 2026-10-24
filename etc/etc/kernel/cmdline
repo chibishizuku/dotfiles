@@ -1,0 +1,1 @@
+cryptdevice=UUID=d6572c6b-29f0-4f38-81c8-ac3a165c9afa:cryptroot root=/dev/mapper/cryptroot rootflags=subvol=@ rw rootfstype=btrfs zswap.enabled=0 lockdown=integrity

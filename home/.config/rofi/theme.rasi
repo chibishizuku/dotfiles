@@ -1,0 +1,14 @@
+/* Standalone rofi theme. No HyDE / wallbash dependency. Catppuccin Mocha.
+   Variable names match style_3.rasi and clipboard.rasi (@main-*).
+   Alpha background lets Hyprland blur the rofi window (see windowrules.lua). */
+
+* {
+    main-bg:            #1e1e2eee;
+    main-fg:            #cdd6f4ff;
+    main-br:            #cba6f7ff;
+    main-ex:            #f5e0dcff;
+    select-bg:          #b4befeff;
+    select-fg:          #11111bff;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}

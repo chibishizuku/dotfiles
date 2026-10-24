@@ -1,0 +1,64 @@
+[global]
+    monitor = 0
+    follow = mouse
+    layer = overlay
+    origin = top-right
+    offset = (12, 44)
+    width = 260
+    height = 100
+    notification_limit = 4
+
+    font = JetBrainsMono Nerd Font 9
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    ellipsize = end
+    ignore_newline = no
+    show_age_threshold = -1
+    stack_duplicates = true
+    hide_duplicate_count = true
+    show_indicators = no
+
+    padding = 6
+    horizontal_padding = 10
+    text_icon_padding = 8
+    frame_width = 1
+    gap_size = 5
+    separator_height = 0
+    corner_radius = 10
+
+    icon_position = left
+    min_icon_size = 16
+    max_icon_size = 24
+    enable_recursive_icon_lookup = true
+
+    progress_bar = true
+    progress_bar_height = 5
+    progress_bar_frame_width = 0
+    progress_bar_corner_radius = 3
+
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+[urgency_low]
+    background = "#1e1e2ee0"
+    foreground = "#a6adc8"
+    frame_color = "#45475a"
+    highlight = "#b4befe"
+    timeout = 2
+
+[urgency_normal]
+    background = "#1e1e2ee0"
+    foreground = "#cdd6f4"
+    frame_color = "#b4befe"
+    highlight = "#b4befe"
+    timeout = 3
+
+[urgency_critical]
+    background = "#1e1e2ee0"
+    foreground = "#cdd6f4"
+    frame_color = "#f38ba8"
+    highlight = "#f38ba8"
+    timeout = 0

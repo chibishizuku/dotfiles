@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+export MOZ_ENABLE_WAYLAND="${MOZ_ENABLE_WAYLAND:-1}"
+export ELECTRON_OZONE_PLATFORM_HINT="${ELECTRON_OZONE_PLATFORM_HINT:-auto}"
+
+export QT_QPA_PLATFORMS="${QT_QPA_PLATFORM:-wayland;xcb}"
+

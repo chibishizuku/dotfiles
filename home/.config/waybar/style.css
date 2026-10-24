@@ -1,0 +1,127 @@
+
+@import "theme.css";
+
+* {
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 10px;
+}
+
+window#waybar {
+    background: @bar-bg;
+    color: @main-fg;
+}
+
+.module {
+    color: @main-fg;
+}
+
+#pill-left,
+#pill-center,
+#pill-right {
+    background-color: @main-bg;
+    border: 0;
+    border-radius: 10pt;
+}
+
+window#waybar.top .modules-left,
+window#waybar.top .modules-center,
+window#waybar.top .modules-right {
+    margin: 0.3em 0.3em;
+    padding: 0 0.3em;
+}
+
+window#waybar.top label.module {
+    padding: 0 0.2em;
+    margin: 0 0.2em;
+}
+
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    padding: 0 0.5em;
+    margin: 0.3em 0.1em;
+    color: @main-fg;
+    background: transparent;
+}
+
+#workspaces button.active {
+    background: @wb-act-bg;
+    color: @wb-act-fg;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 10pt;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#workspaces button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    border-radius: 10pt;
+    transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#custom-caffeine.active { color: #f9e2af; }
+#custom-caffeine.inactive { opacity: 0.6; }
+#custom-caffeine { font-size: 11px; }
+#custom-powerprofile { font-size: 13px; }
+#custom-powerprofile.low-power   { color: #a6e3a1; }
+#custom-powerprofile.balanced    { color: #b4befe; }
+#custom-powerprofile.performance { color: #fab387; }
+
+#clock { padding: 0 0.35em; }
+
+#backlight,
+#pulseaudio,
+#pulseaudio.microphone,
+#tray,
+#battery { padding: 0 0.35em; }
+#battery.warning { color: @wb-hvr-bg; }
+#battery.critical { color: #f38ba8; }
+
+#tray menu {
+    background: @main-bg;
+    color: @main-fg;
+}
+
+#tray menu separator {
+    min-height: 0.1em;
+}
+
+tooltip,
+tooltip.background {
+    background-color: alpha(@tooltip-bg, 0.8);
+    border: 1px solid alpha(@main-fg, 0.25);
+    border-radius: 10pt;
+    box-shadow: none;
+}
+
+tooltip decoration {
+    background: transparent;
+    box-shadow: none;
+}
+
+tooltip * {
+    background: transparent;
+    color: @main-fg;
+}
+
+menu {
+    background-color: @main-bg;
+    color: @main-fg;
+}
+
+menu menuitem {
+    transition: 0.25s;
+}
+
+menu menuitem:hover {
+    background-color: @wb-act-bg;
+    color: @wb-act-fg;
+}
+
