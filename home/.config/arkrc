@@ -1,0 +1,12 @@
+[ExtractDialog]
+1920x1080 screen: Window-Maximized=true
+1920x1200 screen: Window-Maximized=true
+2 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/,$HOME/Documents/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled

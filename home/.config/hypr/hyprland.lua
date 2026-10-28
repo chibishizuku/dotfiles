@@ -47,6 +47,7 @@ hl.config({
 
 hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
 hl.permission("/usr/(bin|local/bin)/hyprpicker", "screencopy", "allow")
+hl.permission("/usr/(bin|local/bin)/hyprlock", "screencopy", "allow")
 hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "deny")
 
@@ -57,6 +58,8 @@ hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "deny")
 hl.on("hyprland.start", function()
 	hl.exec_cmd("wl-clip-persist --clipboard regular")
 	hl.exec_cmd("~/.config/hypr/wallpaper.sh")
+	hl.exec_cmd("wl-paste --type text --watch timeout 2 cliphist store")
+	hl.exec_cmd("wl-paste --type image --watch timeout 5 cliphist store")
 end)
 
 ---------------
